@@ -37,7 +37,7 @@ import { TourLandingComponent } from './component/tour-landing/tour-landing.comp
     MatSelectModule,
     FlexLayoutModule,
     MatGridListModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase, 'paradise-center-montana'),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
