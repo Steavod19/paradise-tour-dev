@@ -9,8 +9,22 @@
   }
 
   &__image-container {
-    background-color: grey;
-    min-height: 190px;
-    min-width: 100%;
+    cursor: pointer;
+    background-color: white;
+    height: 190px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    .transbox {
+      background-color: #ffffff;
+      opacity: 0.8;
+      filter: alpha(opacity=80); /* For IE8 and earlier */
+      height: 40px;
+      margin-top: 150px;
+      padding: 5px;
+      text-align: center
+    }
   }
+
 }
