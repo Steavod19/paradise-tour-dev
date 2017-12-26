@@ -1,21 +1,20 @@
-<section>
+<section fxLayoutAlign="flex-end" class="paradise-navbar">
   <button mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voicemail</span>
+    <button (click)="toggleHome()" mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Paradise Center</span>
     </button>
     <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
+      <mat-icon>explore</mat-icon>
+      <span>Explore</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>phone</mat-icon>
+      <span>Contact Us</span>
     </button>
   </mat-menu>
-
 </section>
 <!-- <mat-checkbox>Check me!</mat-checkbox> -->

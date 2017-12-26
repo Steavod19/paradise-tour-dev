@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,17 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  answer: string = '';
-    answerDisplay: string = '';
-    showSpinner: boolean = false;
+  tourLanding: boolean = false;
 
-    showAnswer() {
-      this.showSpinner = true;
-
-      setTimeout(() => {
-        this.answerDisplay = this.answer;
-        this.showSpinner = false;
-      }, 2000);
-    }
-
+  toggleTourLanding() {
+    this.tourLanding = !this.tourLanding;
+  }
+  toggleHomePage() {
+    this.tourLanding = false;
+  }
 }
