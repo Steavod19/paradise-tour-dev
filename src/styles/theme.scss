@@ -19,3 +19,7 @@ $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
   @include angular-material-theme($alternate-theme);
 }
+
+.mat-button, .mat-icon-button {
+  background-color: #FFF;
+}

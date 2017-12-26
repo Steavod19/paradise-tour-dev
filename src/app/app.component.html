@@ -1,18 +1,19 @@
-<div class="paradise-center">
-  <div class="" fxLayout fxLayout.xs="column" fxLayoutAlign="end" fxLayoutGap.xs="0">
+<div class="paradise-center mat-typography">
+  <div class="" fxLayout fxLayoutAlign="end">
     <div class="item item-1">
       <nav-bar (home)='toggleHomePage()'></nav-bar>
     </div>
   </div>
 
-  <div *ngIf="!tourLanding" class="" fxLayout fxLayout.xs="column" fxLayoutAlign="right" fxLayoutGap.xs="0">
-    <div class="item item-1">
-      <landing-body (tour)='toggleTourLanding()'></landing-body>
+  <div class="paradise-center__body-container">
+    <div *ngIf="!tourLanding" class="" fxLayoutAlign="center">
+      <div class="item item-1">
+        <landing-body (tour)='toggleTourLanding()'></landing-body>
+      </div>
+    </div>
+
+    <div *ngIf="tourLanding" class="">
+      <tour-landing></tour-landing>
     </div>
   </div>
-</div>
-
-<div *ngIf="tourLanding" class="">
-  <tour-landing></tour-landing>
-  ksdjhfkaj
 </div>

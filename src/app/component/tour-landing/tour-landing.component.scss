@@ -1,0 +1,16 @@
+.tour-landing {
+  &__text-container {
+    h1 {
+      margin:0px;
+    }
+  }
+  &__container {
+    margin-top:10px;
+  }
+
+  &__image-container {
+    background-color: grey;
+    min-height: 190px;
+    min-width: 100%;
+  }
+}
